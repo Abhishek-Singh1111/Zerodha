@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f6f8fb;
+  color: #0f172a;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.lp-main {
+  padding: 0.75rem 0;
+}
+
+.lp-section {
+  background: #fff;
+  border: 1px solid #e5ecf6;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(16, 24, 40, 0.06);
+}
+
+.lp-hero {
+  background: radial-gradient(
+      900px circle at 50% 0%,
+      rgba(56, 126, 209, 0.14),
+      transparent 55%
+    ),
+    #fff;
+  border: 1px solid #e5ecf6;
+  border-radius: 18px;
+  box-shadow: 0 14px 34px rgba(16, 24, 40, 0.08);
+}
+
+.lp-navbar {
+  backdrop-filter: blur(8px);
+}
+
+.lp-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lp-brand img {
+  width: 128px;
+  height: auto;
+}
+
+.lp-topic-card {
+  border: 1px solid #dbe7f6;
+  border-radius: 16px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.lp-topic-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(16, 24, 40, 0.06);
+}
+
+@media (max-width: 575.98px) {
+  .lp-main {
+    padding: 0.5rem 0;
+  }
+
+  .lp-section,
+  .lp-hero {
+    border-radius: 14px;
+  }
+}
